@@ -1,0 +1,19 @@
+{
+	"Componente funcional": {
+		"scope": "javascript,typescript",
+		"prefix": "cmpf",
+		"body": [
+			"import React from 'react';",
+			"import { StyleSheet, Text, View } from 'react-native';",
+			"",
+			"export default function App() {",
+			"return (",
+			"<View>",
+			"</View>",
+			");",
+			"return (",
+      "}"
+		],
+		"description": "Log output to console"
+	}
+}
