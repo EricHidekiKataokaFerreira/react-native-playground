@@ -96,8 +96,7 @@ export default function Creativity ({routes} : CreativityProps) {
 
 const styles = StyleSheet.create({
   container: { 
-    padding: 20,
-    gap: 20,
+    padding: 15,
     flexDirection: 'row',
     flexWrap: 'wrap',
     backgroundColor: '#f5f5f5',

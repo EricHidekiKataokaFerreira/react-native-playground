@@ -10,23 +10,32 @@ type Props = {
 
 export default function RedirectCard ({title, image, onPress}: Props) {
   return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={styles.redirectCard}
-    >
-      {image && <View style={styles.imageContainer}>{image}</View>}
-      <Text>{title}</Text>
-    </TouchableOpacity>
+    <View style={styles.container}>
+      <TouchableOpacity
+        onPress={onPress}
+        style={styles.redirectCard}
+      >
+        {image && <View style={styles.imageContainer}>{image}</View>}
+        <Text>{title}</Text>
+      </TouchableOpacity>
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
-  redirectCard: {
-    backgroundColor: '#ffffff',
-    width: '46.5%',
+  container: {
+    width: '50%',
     height: 150,
+    padding: 5,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  redirectCard: {
+    backgroundColor: '#ffffff',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    height: '100%'
   },
   imageContainer: {
     justifyContent: 'center',
